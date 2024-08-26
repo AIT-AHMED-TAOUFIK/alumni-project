@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morocco-Alumni</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kufam&family=Plus+Jakarta+Sans&family=Roboto&family=Source+Sans+3&family=Work+Sans&family=SF+Pro&family=Montserrat&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="16x16" href="../medias/images/favicon.png">
+
+  <!-- BootStrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Font Awesome -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" /> -->
+  <script src="https://kit.fontawesome.com/a8e0b80ebd.js" crossorigin="anonymous"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+  <!-- ################################ -->
+  <!-- header & navigation -->
+  <!-- ################################ -->
+  <header>
+    <div id="btn-burger"><i class="bi bi-list"></i></div>
+    <div class="navbar">
+      <a class="logo" href="#">
+        <img src="../medias/images/LOGO.png">
+      </a>
+      <div class="nav-left">
+        <nav>
+          <ul>
+            <li><a href="#">Qui sommes-nous</a></li>
+            <li><a href="#">Actualités</a></li>
+            <li><a href="#">Evénements</a></li>
+            <li><a href="#">Nos leaders</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="nav-right">
+        <a href="#" class="btn espace-membres">Espace membres</a>
+        <a href="#" class="btn devenir-membre">Devenir membre</a>
+      </div>
+    </div>
+    <div id="btn-person-plus"><i class="bi bi-person-plus-fill"></i></i></div>
+  </header>
+  <hr>
+
+  <main>
+    <!-- ################################ -->
+    <!-- hero section -->
+    <!-- ################################ -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Le point de rencontre <br> des leaders</h1>
+        <p>Morocco Alumni est une plateforme créée par l'Agence Marocaine de
+          Coopération Internationale qui a pour vocation de rassembler les anciens
+          étudiants de la coopération du Royaume du Maroc autour d'un réseau
+          mondial de lauréats de notre pays.
+        </p>
+        <a href="#" class="btn rejoindre">Rejoindre la communauté</a>
+      </div>
+      <div class="hero-image">
+        <img src="../medias/images/Aivatar.png" alt="Aivatar">
+      </div>
+    </section>
+
+    <!-- ################################ -->
+    <!-- services section -->
+    <!-- ################################ -->
+    <section class="services">
+      <h2>Nos services</h2>
+      <div class="service-cards">
+        <div class="service-formations">
+          <img class="service-icone" src="../medias/images/icone_formations.png" alt="Formations">
+          <h3>Formations</h3>
+          <p>High level overviews. approaches lverall value proposition. Organically grow the holistic world
+            view of
+            disruptive.</p>
+        </div>
+        <div class="service-bourse">
+          <img class="service-icone" src="../medias/images/icone_bourse.png" alt="Ma Bourse">
+          <h3>Ma Bourse</h3>
+          <p>High level overviews. approaches lverall value proposition. Organically grow the holistic world
+            view of
+            disruptive.</p>
+        </div>
+        <div class="service-hebergement">
+          <img class="service-icone" src="../medias/images/icone_hebergement.png" alt="Demande d'hébergement">
+          <h3>Demande d'hébergement</h3>
+          <p>High level overviews. approaches lverall value proposition. Organically grow the holistic world
+            view of
+            disruptive.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ################################ -->
+    <!-- actualities section -->
+    <!-- ################################ -->
+    <section class="actualites">
+      <h2>Actualités</h2>
+      <div class="actualites-categories">
+        <button class="category-button selected" onclick="showAllActualites()">Toutes les actualités</button>
+        <button class="category-button" onclick="showDivers()">Divers</button>
+        <button class="category-button" onclick="showEvenements()">Evénements</button>
+        <button class="category-button" onclick="showMonde()">Monde</button>
+      </div>
+      <!--  Slider Toutes Actualite-->
+      <!-- Slider JS main container -->
+      <div class="actualites-swiper toutes-actualites swiper">
+        <!-- Additional required wrapper -->
+        <div class="actualites-swiper-wrapper swiper-wrapper">
+          <!-- Slides -->
+          <div class="actualite-card swiper-slide">
+            <img src="../medias/images/news1.png" alt="News 1">
+            <div class="actualite-content">
+              <span class="date">Published in Insight Jan 30, 2024</span>
+              <h3>Un exemple de titre</h3>
+              <p>In this article, we'll cover how to create user flows</p>
+            </div>
+          </div>
+          <div class="actualite-card swiper-slide">
+            <img src="../medias/images/news2.png" alt="News 2">
+            <div class="actualite-content">
+              <span class="date">Published in Insight Jan 30, 2024</span>
+              <h3>Un deuxième exemple de titre</h3>
+              <p>What are Design Principles?… To understand design principles, we first discuss the principles. </p>
+            </div>
+          </div>
+          <div class="actualite-card swiper-slide">
+            <img src="../medias/images/news2.png" alt="News 3">
+            <div class="actualite-content">
+              <span class="date">Published in Insight Jan 30, 2024</span>
+              <h3>Un troisième exemple de titre</h3>
+              <p>What are Design Principles?… To understand design principles, we first discuss the principles. </p>
+            </div>
+          </div>
+          <div class="actualite-card swiper-slide">
+            <img src="../medias/images/news1.png" alt="News 4">
+            <div class="actualite-content">
+              <span class="date">Published in Insight Jan 30, 2024</span>
+              <h3>Un exemple de titre</h3>
+              <p>In this article, we'll cover how to create user flows</p>
+            </div>
+          </div>
+          <div class="actualite-card swiper-slide">
+            <img src="../medias/images/news1.png" alt="News 5">
+            <div class="actualite-content">
+              <span class="date">Published in Insight Jan 30, 2024</span>
+              <h3>Un exemple de titre</h3>
+              <p>In this article, we'll cover how to create user flows</p>
+            </div>
+          </div>
+          <div class="actualite-card swiper-slide">
+            <img src="../medias/images/news1.png" alt="News 6">
+            <div class="actualite-content">
+              <span class="date">Published in Insight Jan 30, 2024</span>
+              <h3>Un exemple de titre</h3>
+              <p>In this article, we'll cover how to create user flows</p>
+            </div>
+          </div>
+          <div class="actualite-card swiper-slide">
+            <img src="../medias/images/news1.png" alt="News 7">
+            <div class="actualite-content">
+              <span class="date">Published in Insight Jan 30, 2024</span>
+              <h3>Un exemple de titre</h3>
+              <p>In this article, we'll cover how to create user flows</p>
+            </div>
+          </div>
+          <div class="actualite-card swiper-slide">
+            <img src="../medias/images/news1.png" alt="News 8">
+            <div class="actualite-content">
+              <span class="date">Published in Insight Jan 30, 2024</span>
+              <h3>Un exemple de titre</h3>
+              <p>In this article, we'll cover how to create user flows</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-actualites-controls">
+          <div class="swiper-actualites-prev toutes-actualites">
+            <img src="../medias/images/prev-icon.svg" alt="Previous">
+          </div>
+          <div class="swiper-actualites-next toutes-actualites">
+            <img src="../medias/images/next-icon.svg" alt="Next">
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Divers -->
+      <div class="actualites-swiper swiper divers" style="display: none;">
+        <div class="swiper-wrapper">
+          <div class="actualite-card swiper-slide">
+            <img src="../medias/images/news1.png" alt="News 1">
+            <div class="actualite-content">
+              <span class="date">Published in Insight Jan 30, 2024</span>
+              <h3>Un exemple de titre</h3>
+              <p>In this article, we'll cover how to create user flows</p>
+            </div>
+          </div>
+          <div class="actualite-card swiper-slide">
+            <img src="../medias/images/news2.png" alt="News 2">
+            <div class="actualite-content">
+              <span class="date">Published in Insight Jan 30, 2024</span>
+              <h3>Un deuxième exemple de titre</h3>
+              <p>What are Design Principles?… To understand design principles, we first discuss the principles. </p>
+            </div>
+          </div>
+          <div class="actualite-card swiper-slide">
+            <img src="../medias/images/news2.png" alt="News 3">
+            <div class="actualite-content">
+              <span class="date">Published in Insight Jan 30, 2024</span>
+              <h3>Un troisième exemple de titre</h3>
+              <p>What are Design Principles?… To understand design principles, we first discuss the principles. </p>
+            </div>
+          </div>
+          <div class="actualite-card swiper-slide">
+            <img src="../medias/images/news1.png" alt="News 4">
+            <div class="actualite-content">
+              <span class="date">Published in Insight Jan 30, 2024</span>
+              <h3>Un exemple de titre</h3>
+              <p>In this article, we'll cover how to create user flows</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-actualites-controls">
+          <div class="swiper-actualites-prev divers">
+            <img src="../medias/images/prev-icon.svg" alt="Previous">
+          </div>
+          <div class="swiper-actualites-next divers">
+            <img src="../medias/images/next-icon.svg" alt="Next">
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Evenements -->
+      <div class="actualites-swiper swiper evenements" style="display: none;">
+        <div class="swiper-wrapper">
+          <div class="actualite-card swiper-slide">
+            <img src="../medias/images/news1.png" alt="News 1">
+            <div class="actualite-content">
+              <span class="date">Published in Insight Jan 30, 2024</span>
+              <h3>Un exemple de titre</h3>
+              <p>In this article, we'll cover how to create user flows</p>
+            </div>
+          </div>
+          <div class="actualite-card swiper-slide">
+            <img src="../medias/images/news2.png" alt="News 2">
+            <div class="actualite-content">
+              <span class="date">Published in Insight Jan 30, 2024</span>
+              <h3>Un deuxième exemple de titre</h3>
+              <p>What are Design Principles?… To understand design principles, we first discuss the principles. </p>
+            </div>
+          </div>
+          <div class="actualite-card swiper-slide">
+            <img src="../medias/images/news2.png" alt="News 3">
+            <div class="actualite-content">
+              <span class="date">Published in Insight Jan 30, 2024</span>
+              <h3>Un troisième exemple de titre</h3>
+              <p>What are Design Principles?… To understand design principles, we first discuss the principles. </p>
+            </div>
+          </div>
+          <div class="actualite-card swiper-slide">
+            <img src="../medias/images/news1.png" alt="News 4">
+            <div class="actualite-content">
+              <span class="date">Published in Insight Jan 30, 2024</span>
+              <h3>Un exemple de titre</h3>
+              <p>In this article, we'll cover how to create user flows</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-actualites-controls">
+          <div class="swiper-actualites-prev evenements">
+            <img src="../medias/images/prev-icon.svg" alt="Previous">
+          </div>
+          <div class="swiper-actualites-next evenements">
+            <img src="../medias/images/next-icon.svg" alt="Next">
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Monde -->
+      <div class="actualites-swiper swiper monde" style="display: none;">
+        <div class="swiper-wrapper">
+          <div class="actualite-card swiper-slide">
+            <img src="../medias/images/news1.png" alt="News 1">
+            <div class="actualite-content">
+              <span class="date">Published in Insight Jan 30, 2024</span>
+              <h3>Un exemple de titre</h3>
+              <p>In this article, we'll covxer how to create user flows</p>
+            </div>
+          </div>
+          <div class="actualite-card swiper-slide">
+            <img src="../medias/images/news2.png" alt="News 2">
+            <div class="actualite-content">
+              <span class="date">Published in Insight Jan 30, 2024</span>
+              <h3>Un deuxième exemple de titre</h3>
+              <p>What are Design Principles?… To understand design principles, we first discuss the principles. </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-actualites-controls">
+          <div class="swiper-actualites-prev monde">
+            <img src="../medias/images/prev-icon.svg" alt="Previous">
+          </div>
+          <div class="swiper-actualites-next monde">
+            <img src="../medias/images/next-icon.svg" alt="Next">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ################################ -->
+    <!-- offres d'emploi section -->
+    <!-- ################################ -->
+    <section class="offres-emploi">
+      <h2>Offres d'emploi</h2>
+      <div class="offres-swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="offre-card swiper-slide">
+            <div class="offre-type">Stage</div>
+            <div class="offre-details">
+              <span class="offre-title">Responsable</span>
+              <span class="offre-description">Aperçu de l'offre à mettre ici</span>
+            </div>
+          </div>
+          <div class="offre-card swiper-slide">
+            <div class="offre-type">Stage</div>
+            <div class="offre-details">
+              <span class="offre-title">Responsable</span>
+              <span class="offre-description">Aperçu de l'offre à mettre ici</span>
+            </div>
+          </div>
+          <div class="offre-card swiper-slide">
+            <div class="offre-type">Stage</div>
+            <div class="offre-details">
+              <span class="offre-title">Responsable</span>
+              <span class="offre-description">Aperçu de l'offre à mettre ici</span>
+            </div>
+          </div>
+          <div class="offre-card swiper-slide">
+            <div class="offre-type">Stage</div>
+            <div class="offre-details">
+              <span class="offre-title">Responsable</span>
+              <span class="offre-description">Aperçu de l'offre à mettre ici</span>
+            </div>
+          </div>
+          <div class="offre-card swiper-slide">
+            <div class="offre-type">Stage</div>
+            <div class="offre-details">
+              <span class="offre-title">Responsable</span>
+              <span class="offre-description">Aperçu de l'offre à mettre ici</span>
+            </div>
+          </div>
+          <div class="offre-card swiper-slide">
+            <div class="offre-type">Stage</div>
+            <div class="offre-details">
+              <span class="offre-title">Responsable</span>
+              <span class="offre-description">Aperçu de l'offre à mettre ici</span>
+            </div>
+          </div>
+          <div class="offre-card swiper-slide">
+            <div class="offre-type">Stage</div>
+            <div class="offre-details">
+              <span class="offre-title">Responsable</span>
+              <span class="offre-description">Aperçu de l'offre à mettre ici</span>
+            </div>
+          </div>
+          <div class="offre-card swiper-slide">
+            <div class="offre-type">Stage</div>
+            <div class="offre-details">
+              <span class="offre-title">Responsable</span>
+              <span class="offre-description">Aperçu de l'offre à mettre ici</span>
+            </div>
+          </div>
+          <div class="offre-card swiper-slide">
+            <div class="offre-type">Stage</div>
+            <div class="offre-details">
+              <span class="offre-title">Responsable</span>
+              <span class="offre-description">Aperçu de l'offre à mettre ici</span>
+            </div>
+          </div>
+          <div class="offre-card swiper-slide">
+            <div class="offre-type">Stage</div>
+            <div class="offre-details">
+              <span class="offre-title">Responsable</span>
+              <span class="offre-description">Aperçu de l'offre à mettre ici</span>
+            </div>
+          </div>
+          <div class="offre-card swiper-slide">
+            <div class="offre-type">Stage</div>
+            <div class="offre-details">
+              <span class="offre-title">Responsable</span>
+              <span class="offre-description">Aperçu de l'offre à mettre ici</span>
+            </div>
+          </div>
+          <div class="offre-card swiper-slide">
+            <div class="offre-type">Stage</div>
+            <div class="offre-details">
+              <span class="offre-title">Responsable</span>
+              <span class="offre-description">Aperçu de l'offre à mettre ici</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <a href="#" class="btn voir-offres">Voir toutes les offres</a>
+    </section>
+
+    <!-- ################################ -->
+    <!-- chiffres cles section -->
+    <!-- ################################ -->
+    <section class="chiffres-cles">
+      <h2>Chiffres clès</h2>
+      <div class="chiffre-content">
+        <div class="case-chiffre">
+          <span class="chiffre">8,640</span>
+          <br>
+          <span class="description-chiffre">Etudiants</span>
+        </div>
+        <div class="case-chiffre">
+          <span class="chiffre">40</span>
+          <br>
+          <span class="description-chiffre">Lauréats inscrits</span>
+        </div>
+        <div class="case-chiffre">
+          <span class="chiffre">40</span>
+          <br>
+          <span class="description-chiffre">Associations inscrites</span>
+        </div>
+        <div class="case-chiffre">
+          <span class="chiffre">4</span>
+          <br>
+          <span class="description-chiffre">Partenaires inscrits</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ################################ -->
+    <!-- leaders section -->
+    <!-- ################################ -->
+    <section class="leaders">
+      <div class="leaders-menu">
+        <h2>Leaders autour <br> du monde</h2>
+        <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
+        <div class="swiper-controls">
+          <div class="leaders-swiper-btn prev">
+            <img src="../medias/images/prev-icon.svg" alt="Previous">
+          </div>
+          <div class="leaders-swiper-btn next">
+            <img src="../medias/images/next-icon.svg" alt="Next">
+          </div>
+        </div>
+      </div>
+
+      <div class="leaders-content">
+        <!-- Leader Slider -->
+        <div class="swiper leaders-swiper">
+          <div class="swiper-wrapper">
+            <div class="leader-card swiper-slide">
+              <img src="../medias/images/avatar-2.png" alt="Anna Smith">
+              <div class="leader-info">
+                <span class="leader-name">Anna Smith</span>
+                <span class="leader-position">Président</span>
+              </div>
+            </div>
+            <div class="leader-card swiper-slide">
+              <img src="../medias/images/avatar-2.png" alt="Anna Smith">
+              <div class="leader-info">
+                <span class="leader-name">Anna Smith</span>
+                <span class="leader-position">Président</span>
+              </div>
+            </div>
+            <div class="leader-card swiper-slide">
+              <img src="../medias/images/avatar-2.png" alt="Anna Smith">
+              <div class="leader-info">
+                <span class="leader-name">Anna Smith</span>
+                <span class="leader-position">Président</span>
+              </div>
+            </div>
+            <div class="leader-card swiper-slide">
+              <img src="../medias/images/avatar-2.png" alt="Anna Smith">
+              <div class="leader-info">
+                <span class="leader-name">Anna Smith</span>
+                <span class="leader-position">Président</span>
+              </div>
+            </div>
+            <div class="leader-card swiper-slide">
+              <img src="../medias/images/avatar-2.png" alt="Anna Smith">
+              <div class="leader-info">
+                <span class="leader-name">Anna Smith</span>
+                <span class="leader-position">Président</span>
+              </div>
+            </div>
+            <div class="leader-card swiper-slide">
+              <img src="../medias/images/avatar-2.png" alt="Anna Smith">
+              <div class="leader-info">
+                <span class="leader-name">Anna Smith</span>
+                <span class="leader-position">Président</span>
+              </div>
+            </div>
+            <div class="leader-card swiper-slide">
+              <img src="../medias/images/avatar-2.png" alt="Anna Smith">
+              <div class="leader-info">
+                <span class="leader-name">Anna Smith</span>
+                <span class="leader-position">Président</span>
+              </div>
+            </div>
+            <div class="leader-card swiper-slide">
+              <img src="../medias/images/avatar-2.png" alt="Anna Smith">
+              <div class="leader-info">
+                <span class="leader-name">Anna Smith</span>
+                <span class="leader-position">Président</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn voir-leaders">Voir tous les leaders</a>
+      </div>
+    </section>
+
+    <!-- ################################ -->
+    <!-- Temoignages section -->
+    <!-- ################################ -->
+    <section class="temoignages">
+      <div class="temoignages-menu">
+        <h2>Témoignages</h2>
+        <div class="swiper-controls">
+          <button class="temoignages-swiper-btn prev">
+            <img src="../medias/images/left-arrow.svg" alt="Previous">
+          </button>
+          <button class="temoignages-swiper-btn next">
+            <img src="../medias/images/right-arrow.svg" alt="Next">
+          </button>
+        </div>
+      </div>
+      <!-- Temoignages Slider-->
+      <div class="swiper temoignages-swiper">
+        <div class="swiper-wrapper">
+          <div class="temoignage-card swiper-slide">
+            <blockquote class="author-quote">
+              Distinctively re-engineer revolutionary services and premium At vero accusamus
+              et iustoDignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.
+            </blockquote>
+            <div class="author">
+              <img src="../medias/images/temoignage1.jpg" alt="Victor Murphy">
+              <div class="author-info">
+                <span class="author-name">Victor Murphy</span>
+                <span class="author-position">Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="temoignage-card swiper-slide">
+            <blockquote class="author-quote">
+              Completely synergize resource taxing relationships via premier. Professionally cultivate one-to-one
+              customer
+              service with robust ideas.
+              <br>
+              Dynamically innovate resource-leveling customer service for state of the art customer service.
+            </blockquote>
+            <div class="author">
+              <img src="../medias/images/temoignage2.jpg" alt="Nan Petty Calvin">
+              <div class="author-info">
+                <span class="author-name">Nan Petty Calvin</span>
+                <span class="author-position">Président-directeur général</span>
+              </div>
+            </div>
+          </div>
+          <div class="temoignage-card swiper-slide">
+            <blockquote class="author-quote">
+              Distinctively re-engineer revolutionary services and premium At vero accusamus
+              et iustoDignissimos.
+            </blockquote>
+            <div class="author">
+              <img src="../medias/images/temoignage3.jpg" alt="Ne Peeter Walker">
+              <div class="author-info">
+                <span class="author-name">Ne Peeter Walker</span>
+                <span class="author-position">Responsable</span>
+              </div>
+            </div>
+          </div>
+          <div class="temoignage-card swiper-slide">
+            <blockquote class="author-quote">
+              Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize
+              quality intellectual capital without superior colla idea-sharing. Holistically pontificate installed base
+              portals after maintainable products.
+              <br>
+              Phosfluorescently engage methodologies with web-enabled technology.
+            </blockquote>
+            <div class="author">
+              <img src="../medias/images/temoignage4.jpg" alt="Nancy Mithi">
+              <div class="author-info">
+                <span class="author-name">Nancy Mithi</span>
+                <span class="author-position">Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="temoignage-card swiper-slide">
+            <blockquote class="author-quote">
+              Distinctively re-engineer revolutionary services and premium At vero accusamus
+              et iustoDignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.
+            </blockquote>
+            <div class="author">
+              <img src="../medias/images/temoignage1.jpg" alt="Victor Murphy">
+              <div class="author-info">
+                <span class="author-name">Victor Murphy</span>
+                <span class="author-position">Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="temoignage-card swiper-slide">
+            <blockquote class="author-quote">
+              Completely synergize resource taxing relationships via premier. Professionally cultivate one-to-one
+              customer
+              service with robust ideas.
+              <br>
+              Dynamically innovate resource-leveling customer service for state of the art customer service.
+            </blockquote>
+            <div class="author">
+              <img src="../medias/images/temoignage2.jpg" alt="Nan Petty Calvin">
+              <div class="author-info">
+                <span class="author-name">Nan Petty Calvin</span>
+                <span class="author-position">Président-directeur général</span>
+              </div>
+            </div>
+          </div>
+          <div class="temoignage-card swiper-slide">
+            <blockquote class="author-quote">
+              Distinctively re-engineer revolutionary services and premium At vero accusamus
+              et iustoDignissimos.
+            </blockquote>
+            <div class="author">
+              <img src="../medias/images/temoignage3.jpg" alt="Ne Peeter Walker">
+              <div class="author-info">
+                <span class="author-name">Ne Peeter Walker</span>
+                <span class="author-position">Responsable</span>
+              </div>
+            </div>
+          </div>
+          <div class="temoignage-card swiper-slide">
+            <blockquote class="author-quote">
+              Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize
+              quality intellectual capital without superior colla idea-sharing. Holistically pontificate installed base
+              portals after maintainable products.
+              <br>
+              Phosfluorescently engage methodologies with web-enabled technology.
+            </blockquote>
+            <div class="author">
+              <img src="../medias/images/temoignage4.jpg" alt="Nancy Mithi">
+              <div class="author-info">
+                <span class="author-name">Nancy Mithi</span>
+                <span class="author-position">Manager</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ################################ -->
+    <!-- mediatheque section -->
+    <!-- ################################ -->
+    <section class="mediatheque">
+      <h2>Médiathèque</h2>
+      <div class="mediatheque-swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="video-card swiper-slide">
+            <video controls>
+              <source src="medias/videos/video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="video-info">
+              <img src="../medias/images/channel-icon1.png" class="video-channel-icon">
+              <div class="video-meta">
+                <span class="video-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam</span>
+                <br>
+                <span class="video-channel">Morocco Alumni</span>
+                <br>
+                <span class="video-stat">126K views • 2 hours ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video-card swiper-slide">
+            <video controls>
+              <source src="medias/videos/video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="video-info">
+              <img src="../medias/images/channel-icon1.png" class="video-channel-icon">
+              <div class="video-meta">
+                <span class="video-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                <br>
+                <span class="video-channel">Morocco Alumni</span>
+                <br>
+                <span class="video-stat">2M views • 3 months ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video-card swiper-slide">
+            <video controls>
+              <source src="medias/videos/video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="video-info">
+              <img src="../medias/images/channel-icon1.png" class="video-channel-icon">
+              <div class="video-meta">
+                <span class="video-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                <br>
+                <span class="video-channel">Morocco Alumni</span>
+                <br>
+                <span class="video-stat">663K views • 5 months ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video-card swiper-slide">
+            <video controls>
+              <source src="medias/videos/video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="video-info">
+              <img src="../medias/images/channel-icon2.png" class="video-channel-icon">
+              <div class="video-meta">
+                <span class="video-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                <br>
+                <span class="video-channel">Jeremy Xplores</span>
+                <br>
+                <span class="video-stat">663K views • 5 months ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn voir-mediatheque">Voir toute la médiathèque</a>
+    </section>
+
+  </main>
+
+  <!-- ################################ -->
+  <!-- partenaires section & footer-->
+  <!-- ################################ -->
+  <footer>
+    <section class="partenaires">
+      <h2>Partenaires</h2>
+      <div class="partners-logos">
+        <img class="attijari" src="../medias/images/attijari.png" alt="Attijari">
+        <img class="fm6e" src="../medias/images/fm6e.png" alt="fm6e">
+      </div>
+    </section>
+    <hr>
+
+    <section class="footer-content">
+      <div class="navbar">
+        <div class="nav-left">
+          <nav>
+            <ul>
+              <li><a href="#">Qui sommes-nous</a></li>
+              <li><a href="#">Actualités</a></li>
+              <li><a href="#">Evénements</a></li>
+              <li><a href="#">Nos leaders</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="nav-center">
+          <a href="#">
+            <img src="../medias/images/LOGO.png" alt="Logo" width="193" height="63">
+          </a>
+        </div>
+
+        <div class="nav-right">
+          <a href="#" class="contact-link">Restez en contact</a>
+          <form role="search">
+            <input class="form-control" type="search" placeholder="Adresse Email" aria-label="Adresse Email">
+            <button class="btn footer-btn" type="submit">S’inscrire</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="footer-bottom">
+      <div class="social-media">
+        <a href="#"><img src="../medias/images/x.png" alt="Twitter"></a>
+        <a href="#"><img src="../medias/images/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="../medias/images/instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="../medias/images/linkedin.png" alt="LinkedIn"></a>
+      </div>
+      <div><p>© 2024 AIT AHMED TAOUFIK. Tous droits réservés.</p></div>
+    </section>
+  </footer>
+
+
+
+  <!-- Swiper JS -->
+  <script src="./js/swiper-bundle.min.js"></script>
+
+  <!-- javascript -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
